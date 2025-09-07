@@ -1,11 +1,14 @@
+// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Smooth scrolling
+
+  // Smooth scrolling for nav links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
-      });
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
     });
   });
 
@@ -15,10 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", e => {
       e.preventDefault();
       alert("Message sent! We'll get back to you soon.");
+      form.reset(); // optional: clears the form after submit
     });
   }
 
-  // PDF toggle
+  // PDF toggle (expand/collapse)
   const toggleBtn = document.getElementById('togglePDF');
   const pdf = document.getElementById('pdfEmbed');
 
@@ -28,4 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleBtn.textContent = pdf.classList.contains('expanded') ? 'Collapse PDF' : 'View PDF';
     });
   }
+
 });
