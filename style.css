@@ -117,19 +117,24 @@ header a:hover {
   line-height: 1.8;
 }
 
-/* PDF Embed Section */
-#proposal embed {
-  border: 2px solid #ddd;
+/* Proposal / PDF Section */
+.proposal-box {
+  background: #f7f7f7;
+  border: 2px solid #000;
   border-radius: 6px;
-  margin-top: 1rem;
-  width: 100%;
-  max-width: 1000px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
-/* Timeline (keep box style) */
+.proposal-box embed {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Timeline*/
 .timeline {
   display: flex;
   flex-wrap: wrap;
