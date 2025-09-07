@@ -200,6 +200,18 @@ header a:hover {
   transform: translateY(-5px);
 }
 
+.phase-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.phase-desc {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
 /* Team Section (side by side grid) */
 .team-grid {
   display: grid;
