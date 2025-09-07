@@ -46,4 +46,13 @@ Sentiment analysis will reveal whether written customer experiences reflect the 
 ### 3. Association Rule Mining
 
 **Method:**  
-> Frequent pattern mining and association rules will be applied to both review text and structured product/reviewer attributes. Rules will be extracted to identify co-occurring product descriptors, demographic characteristics, and satisfaction outc
+> Frequent pattern mining and association rules will be applied to both review text and structured product/reviewer attributes. Rules will be extracted to identify co-occurring product descriptors, demographic characteristics, and satisfaction outcomes.
+
+**Research Questions:**  
+- What combinations of product descriptors (e.g., “hydrating” + “gentle”) frequently co-occur in positive reviews?  
+- Are there patterns linking demographic attributes (e.g., “dry skin” users) with higher or lower ratings?  
+- Do product attributes such as high price or exclusivity consistently associate with high `loves_count` or recommendation rates?  
+- What negative associations emerge (e.g., “oily skin” + “irritating” → low ratings)?
+
+**Expected Outcome:**  
+Association rules will highlight hidden patterns between product characteristics, user demographics, and satisfaction measures. This method provides interpretable insights into the combinations of factors that drive positive or negative consumer experiences.
