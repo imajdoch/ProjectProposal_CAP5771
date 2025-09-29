@@ -22,15 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // PDF toggle (expand/collapse)
-  const toggleBtn = document.getElementById('togglePDF');
-  const pdf = document.getElementById('pdfEmbed');
 
-  if (toggleBtn && pdf) {
-    toggleBtn.addEventListener('click', () => {
-      pdf.classList.toggle('expanded');
-      toggleBtn.textContent = pdf.classList.contains('expanded') ? 'Collapse PDF' : 'View PDF';
-    });
-  }
+  // PDF toggle (expand/collapse)
+document.querySelectorAll('.togglePDF').forEach((btn, index) => {
+  const pdf = document.querySelectorAll('.pdfEmbed')[index];
+  
+  btn.addEventListener('click', () => {
+    pdf.classList.toggle('expanded');
+    btn.textContent = pdf.classList.contains('expanded') ? 'Collapse PDF' : 'View PDF';
+  });
+});
+
 
 });
