@@ -23,15 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // PDF toggle (expand/collapse)
-document.querySelectorAll('.togglePDF').forEach((btn, index) => {
-  const pdf = document.querySelectorAll('.pdfEmbed')[index];
-  
+// PDF toggle (expand/collapse)
+document.querySelectorAll('.proposal-box').forEach(box => {
+  const btn = box.querySelector('.togglePDF');
+  const pdf = box.querySelector('.pdfEmbed');
+
   btn.addEventListener('click', () => {
     pdf.classList.toggle('expanded');
     btn.textContent = pdf.classList.contains('expanded') ? 'Collapse PDF' : 'View PDF';
   });
 });
+
 
 
 });
