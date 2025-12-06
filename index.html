@@ -19,6 +19,7 @@
         <li><a href="#ch1">Checkpoint I</a></li>
         <li><a href="#ch2">Checkpoint II</a></li>
         <li><a href="#fr">Final Report</a></li>
+        <li><a href="#keyfindings">Key Findings</a></li>
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -80,14 +81,61 @@
   </div>
 </section>
 
-    <!-- Final Report -->
-<section id="fr" class="section">
+   <!-- Final Report -->
+<section id="fr" class="section finalreport-section">
+  <div class="highlight-badge">⭐ Featured: Final Deliverable ⭐</div>
   <h2>Final Report</h2>
+  <p class="fr-description">
+    Our full project report provides a complete overview of data preparation, exploratory analysis, sentiment modeling,
+    association rule mining, results, limitations, and implications for consumer understanding within the beauty industry.
+  </p>
+  <div class="final-preview">
+    <img src="finalreport_thumbnail.png" alt="Final Report Preview">
+    <a href="CAP5771_finalreport.pdf" class="btn" target="_blank">Open Final Report</a>
+  </div>
   <div class="proposal-box">
-    <button class="btn togglePDF">View PDF</button>
+    <button class="btn togglePDF">View Embedded PDF</button>
     <embed src="CAP5771_finalreport.pdf" type="application/pdf" class="pdfEmbed">
   </div>
 </section>
+
+<!-- Key Findings -->
+<section id="keyfindings" class="section findings-section">
+  <h2>Key Findings</h2>
+
+  <div class="findings-grid">
+    <div class="finding-card">
+      <h3>⭐ Strong Sentiment–Rating Alignment</h3>
+      <p>Textual sentiment strongly matches numerical ratings, indicating reviews express user satisfaction reliably.</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>Price ≠ Satisfaction</h3>
+      <p>Higher-priced and luxury products did not outperform cheaper ones in sentiment or ratings.</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>Positivity Bias</h3>
+      <p>Nearly 80% of reviews were positive, and some 5-star reviews contained negative sentiment words.</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>Core Review Themes</h3>
+      <p>Common topics included hydration, irritation, texture, smell, and effectiveness.</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>Brand-Level Differences</h3>
+      <p>Sentiment varied substantially across brands, with some mid-tier brands outperforming luxury competitors.</p>
+    </div>
+
+    <div class="finding-card">
+      <h3>Model Limitations</h3>
+      <p>Naive Bayes struggled with neutral & negative classes due to strong class imbalance.</p>
+    </div>
+  </div>
+</section>
+
 
 <!-- Timeline -->
 <section id="timeline" class="section">
