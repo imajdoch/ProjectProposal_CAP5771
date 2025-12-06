@@ -169,6 +169,94 @@ header a:hover {
   height: 700px;          /* expanded height */
 }
 
+/* Featured Final Report Section */
+#fr.finalreport-section {
+  background: linear-gradient(135deg, #fff5f6, #ffe7ea);
+  border-left: 8px solid #e60023;
+  padding: 4rem 2rem;
+  box-shadow: 0px 4px 20px rgba(230, 0, 35, 0.15);
+  border-radius: 8px;
+}
+
+#fr h2 {
+  color: #e60023;
+  font-size: 2.5rem;
+}
+
+/* Badge */
+.highlight-badge {
+  display: inline-block;
+  background: #e60023;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  animation: pulse 2.5s infinite;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Final Report Thumbnail */
+.final-preview {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.final-preview img {
+  width: 70%;
+  border: 4px solid #000;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+.fr-description {
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Key Findings Section */
+.findings-section {
+  background: #fafafa;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.findings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.finding-card {
+  background: #fff;
+  border: 2px solid #e60023;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0px 4px 15px rgba(230, 0, 35, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.finding-card:hover {
+  transform: translateY(-5px);
+}
+
+.finding-card h3 {
+  font-size: 1.3rem;
+  color: #e60023;
+  margin-bottom: 0.6rem;
+}
 
 
 /* Timeline*/
